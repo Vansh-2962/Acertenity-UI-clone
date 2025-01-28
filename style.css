@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", serif;
+}
+
+header {
+  background: linear-gradient(to right, #dd4bad, #7362f2);
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+}
+
+header p span {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+  gap: 2em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 40px;
+}
+
+#templates {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+small {
+  background-color: rgb(144, 228, 144);
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid rgb(13, 153, 13);
+  color: rgb(7, 109, 7);
+}
+
+a {
+  text-decoration: none;
+  color: #838282;
+
+  font-size: 1em;
+}
+
+a:hover {
+  color: #4d4b4b;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.moon {
+  color: #838282;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.moon:hover {
+  background-color: #ece9e9;
+}
+
+.search {
+  color: #838282;
+  position: absolute;
+  left: 10px;
+}
+
+.search-input {
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-shadow: 0px 2px 6px #ece9e9;
+  border-radius: 10px;
+}
+
+.social-links input {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid #ece9e9;
+  outline: none;
+}
+
+.hero {
+  display: flex;
+  padding: 40px;
+}
+
+.intro-btn {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  padding: 7px 30px;
+  font-size: 12px;
+  border-radius: 100px;
+  font-weight: bold;
+  color: #696767;
+  border-bottom: 1px solid #838282;
+  cursor: pointer;
+}
+
+.hero-text {
+  width: 50%;
+  padding: 30px;
+}
+.hero-grid {
+  width: 50%;
+}
+.hero-text h1 {
+  font-size: 4em;
+  color: #4a4949;
+  margin-top: 12px;
+}
+.hero-text p {
+  color: #838282;
+  margin: 20px 0px;
+  font-size: 1.2em;
+}
+.buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+.browse-btn {
+  padding: 15px 35px;
+  border-radius: 13px;
+  border: none;
+  font-weight: bold;
+  background-color: #0f172a;
+  color: white;
+  cursor: pointer;
+}
+
+.browse-btn:hover {
+  background-color: white;
+  border: 1px solid #0f172a;
+  color: #0f172a;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn {
+  padding: 15px 35px;
+  border-radius: 13px;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #e9eaeb;
+  cursor: pointer;
+}
+.custom-btn:hover {
+  background-color: #0f172a;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+  color: #676666;
+}
+.brands div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 17px;
+}
+
+.card1 span {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #838282;
+  border: 2px solid white;
+}
+.card1 :nth-child(1) {
+  background-color: rgb(130, 246, 126);
+  position: absolute;
+  right: 210px;
+}
+.card1 :nth-child(1):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 :nth-child(2) {
+  background-color: rgb(249, 155, 155);
+  position: absolute;
+  right: 170px;
+}
+.card1 :nth-child(2):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 :nth-child(3) {
+  background-color: rgb(156, 156, 238);
+  position: absolute;
+  right: 130px;
+}
+.card1 :nth-child(3):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 :nth-child(4) {
+  background-color: rgb(243, 195, 107);
+  position: absolute;
+  right: 90px;
+}
+.card1 :nth-child(4):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 :nth-child(5) {
+  background-color: rgb(246, 169, 246);
+  position: absolute;
+  right: 50px;
+}
+.card1 :nth-child(5):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 :nth-child(6) {
+  background-color: rgb(203, 173, 225);
+  position: absolute;
+  right: 10px;
+}
+.card1 :nth-child(6):hover {
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.card1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  position: relative;
+  border-radius: 20px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.card3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: -1;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.card4 {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 7;
+  grid-row-end: -1;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.card2 {
+  background-color: #1d1c20;
+  padding: 30px;
+}
+.card2 span {
+  color: white;
+  font-weight: 600;
+}
+
+.card2 p {
+  color: #838282;
+  margin-top: 20px;
+}
+#hover-text {
+  font-size: 3em;
+  color: #2c2b2b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#hover-text:hover {
+  color: #838282;
+  transition: all 0.3s ease-in-out;
+}
+.card3 {
+  overflow: hidden;
+  border: 1px solid #d5d7d8;
+}
+.card3 .img {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.card3 .img:hover {
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.card3 div {
+  height: 50%;
+}
+.card3-test p {
+  font-weight: 600;
+}
+
+#date {
+  background-color: white;
+  color: #838282;
+  border: none;
+}
+
+.card3-test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#read-more-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#read-more-btn {
+  background-color: #0f172a;
+  color: white;
+  padding: 8px 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#read-more-btn:hover {
+  background-color: white;
+  border: 1px solid #0f172a;
+  color: #0f172a;
+  transition: all 0.3s ease-in-out;
+}
+
+.card3:hover {
+  transform: perspective(500px) rotateY(10deg);
+  transition: all 0.3s ease-in-out;
+  scale: 0.9;
+}
+
+.card4 {
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(179, 174, 174);
+  font-weight: 600;
+}
+.card4:hover {
+  transform: perspective(500px) rotateY(-10deg);
+  transition: all 0.3s ease-in-out;
+  background-color: #130342;
+  scale: 0.9;
+  animation: animate 1s ease-in-out 0.3s;
+}
+
+@keyframes animate {
+  0% {
+    background-color: #7362f2;
+  }
+  25% {
+    background-color: #5f52c7;
+  }
+  50% {
+    background-color: #4f44a5;
+  }
+  75% {
+    background-color: #3c337c;
+  }
+  100% {
+    background-color: #282254;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hero-text h1 {
+    font-size: 3em;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  #read-more-btn {
+    font-size: 10px;
+  }
+  .card3-test p {
+    font-size: 10px;
+  }
+  #read-more-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+  nav {
+    padding: 14px;
+  }
+  .links {
+    display: none;
+  }
+  .social-links {
+    display: none;
+  }
+
+  header {
+    font-size: 12px;
+  }
+  .brands {
+    flex-direction: column;
+    gap: 10px;
+    /* font-size: 10px; */
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-grid {
+    width: 100%;
+  }
+}
